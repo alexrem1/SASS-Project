@@ -25,3 +25,9 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  document.querySelectorAll(".social-icons a > i").forEach((icon) => {
+    icon.classList.remove("fa-2x");
+  });
+}
